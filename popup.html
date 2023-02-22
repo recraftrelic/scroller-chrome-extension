@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Popup</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .popup-container {
+            padding: 1em;
+            width: 250px;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+            padding: 0.5em 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="popup-container">
+        <h1>Scroller Settings</h1>
+        <div>
+            <p>Scroll speed:</p>
+            <div>
+                <button data-speed="slow" id="scroll-speed-slow">Slow</button>
+                <button data-speed="medium" id="scroll-speed-medium">Medium</button>
+                <button data-speed="fast" id="scroll-speed-fast">Fast</button>
+            </div>
+        </div>
+        <div>
+            <p>Start/Stop</p>
+            <div>
+                <button data-action="start" id="scroll-start">Start</button>
+                <button data-action="stop" id="scroll-stop">Stop</button>
+            </div>
+        </div>
+    </div>
+    <script src="./popup.js"></script>
+</body>
+
+</html>

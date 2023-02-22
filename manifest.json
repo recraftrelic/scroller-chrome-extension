@@ -1,0 +1,23 @@
+{
+    "name": "Scroller",
+    "version": "1.0",
+    "description": "Scroller",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["https://*/*"],
+            "js": ["scroller.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "action": {
+        "default_icon": {
+            "16": "icon.png",
+            "32": "icon.png",
+            "48": "icon.png",
+            "128": "icon.png"
+        },
+        "default_title": "Scroller",
+        "default_popup": "popup.html"
+    }
+}
